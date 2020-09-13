@@ -1,0 +1,65 @@
+
+{
+  "active": true,
+  "type": "cpt",
+  "name": "blog",
+  "supports": [
+    "title",
+    "editor",
+    "thumbnail",
+    "custom-fields"
+  ],
+  "labels": {
+    "has_one": "Пост",
+    "has_many": "Блог",
+    "text_domain": "igrlv",
+    "overrides": {
+      "name": "Блог",
+      "singular_name": "Пост",
+      "menu_name": "Блог",
+      "name_admin_bar": "Пост",
+      "add_new": "Add Пост",
+      "add_new_item": "Add Пост",
+      "edit_item": "Edit Пост",
+      "new_item": "New Пост",
+      "view_item": "View Пост",
+      "view_items": "View Посты",
+      "search_items": "Search Посты",
+      "not_found": "Поста не найдено.",
+      "not_found_in_trash": "Поста не найдено в мусоре.",
+      "parent_item-colon": "Parent Пост:",
+      "all_items": "All Посты",
+      "archives": "Архив Постов",
+      "attributes": "Атрибуты Поста",
+      "insert_into_item": "Insert into Пост",
+      "uploaded_to_this_item": "Uploaded to this Пост",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter Пост list",
+      "items_list_navigation": "Пост list navigation",
+      "items_list": "Список Постов"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      "blog_cat",
+      "blog_tag"
+    ],
+    "rewrite": {
+      "slug": "blog",
+      "with_front": true
+    }
+  }
+}

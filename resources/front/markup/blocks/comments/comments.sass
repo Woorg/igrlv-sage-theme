@@ -1,0 +1,101 @@
+.comments
+  margin-bottom: $margin
+
+  &__title
+    margin-bottom: $margin-title
+
+  .comment-meta
+    margin-bottom: 15px
+    .comment-author,
+    .comment-metadata
+      @extend .text-top
+      color: $accent-2
+      text-decoration: none
+      font-weight: 700
+    .comment-author,
+    .comment-metadata
+      display: inline-block
+
+
+  .comment-awaiting-moderation
+    @extend .text
+    margin-bottom: 15px
+    display: block
+    font-size: 14px
+
+  .comment-content,
+  .reply
+    @extend .text
+
+  .comment-reply-link
+    color: $accent-6
+    text-decoration: none
+    box-shadow: inset 0 -1px 0 transparentize($accent-6, .4)
+    +tr(all .3s ease-out)
+    &:hover
+      box-shadow: none
+      +tr(all .3s ease-out)
+
+  .comment-reply-title
+    @extend .title
+    @extend .title_small
+    margin-bottom: $margin-title
+    font-size: 26px
+    text-align: left
+    a
+      color: $accent-6
+      text-decoration: none
+      box-shadow: inset 0 -1px 0 transparentize($accent-2, .4)
+      +tr(all .3s ease-out)
+      &:hover
+        box-shadow: none
+        +tr(all .3s ease-out)
+
+  .comment-notes,
+  .logged-in-as
+    margin-bottom: $margin
+    @extend .text
+    color: darken($gray, 20)
+    font-size: 16px
+
+  .logged-in-as
+    a
+      color: $accent-2
+      text-decoration: none
+      border-bottom: 1px solid transparentize($accent-2, .9)
+      &:hover
+        border: none
+
+  .comment-form-comment,
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url,
+  .comment-form-submit,
+    margin-bottom: $margin
+
+    display: flex
+    flex-direction: column
+
+    label
+      margin-bottom: 5px
+      display: block
+
+    input,
+    textarea
+      @extend .text
+      border: 1px solid transparentize($black, .9)
+      margin-bottom: 0
+      padding-top: 10px
+      padding-right: 15px
+      padding-bottom: 10px
+      padding-left: 15px
+      background: lighten($black-4, 10)
+      color: $white
+
+
+  .submit
+    margin-top: 25px
+    @extend .button
+    @extend .button_general
+
+    width: 100%

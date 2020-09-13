@@ -1,0 +1,5 @@
+---
+- name: Yet Another Related Posts Plugin (YARPP)
+  slug: yet-another-related-posts-plugin
+  required: true
+  force_activation: true

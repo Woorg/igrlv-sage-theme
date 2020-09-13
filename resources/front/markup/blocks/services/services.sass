@@ -1,0 +1,63 @@
+.services
+  // border-bottom: 1px solid transparentize($white, .7)
+  background: $black
+  // color: $white
+  color: $gray
+  &__container
+    padding-top: $padding
+    padding-bottom: $padding
+
+
+  &__title
+    margin-bottom: $margin-title
+    text-align: left
+
+
+  &__list
+    flex-wrap: wrap
+
+    +mq($medium)
+      flex-wrap: nowrap
+
+
+  &__item
+    margin-right: 30px
+    margin-bottom: $margin
+    max-width: 100%
+    width: 100%
+
+    +mq($medium)
+      max-width: 50%
+
+
+    &:last-child
+     margin-right: 0
+
+  &__item-icon
+    margin-bottom: 10px
+    max-width: 100px
+    color: inherit
+    overflow: hidden
+    +mq($small)
+      max-width: 150px
+
+  &__icon
+    max-width: 100px
+    width: 100%
+    height: 100px
+    color: $accent-1
+    +mq($small)
+      max-width: 150px
+      height: 150px
+
+  &__item-title
+    margin-bottom: $margin
+
+
+  &__item-text
+    padding-right: 0
+
+    +mq($small)
+      padding-right: 100px
+    +mq($medium)
+      padding-right: 150px

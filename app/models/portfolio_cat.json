@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "type": "tax",
+  "name": "portfolio_cat",
+  "links": [
+    "portfolio"
+  ],
+  "labels": {
+    "has_one": "Категория",
+    "has_many": "Категории",
+    "text_domain": "igrlv",
+    "overrides": {
+      "name": "Категории",
+      "singular_name": "Категория",
+      "search_items": "Search Категории",
+      "popular_items": "Popular Категории",
+      "all_items": "All Категории",
+      "parent_item": "Parent Категория",
+      "parent_item_colon": "Parent Категория:",
+      "edit_item": "Edit Категорию",
+      "view_item": "View Категорию",
+      "update_item": "Update Категорию",
+      "add_new_item": "Update Категорию",
+      "new_item_name": "New Категория",
+      "separate_items_with_commas": "Separate Категории with commass",
+      "add_or_remove_items": "Add or remove Категорию",
+      "choose_from_most_used": "Choose from the most used Категорий",
+      "not_found": "No Категорий found.",
+      "no_terms": "No Категорий",
+      "items_list_navigation": "Категорий list navigation",
+      "items_list": "Категорий list"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_nav_menus": true,
+    "show_in_rest": true,
+    "rest_base": "portfolio_cat",
+    "rest_controller_class": "WP_REST_Terms_Controller",
+    "show_tagcloud": true,
+    "show_in_quick_edit": true,
+    "show_admin_column": false,
+    "capabilities": {
+      "manage_terms": "manage_categories",
+      "edit_terms": "manage_categories",
+      "delete_terms": "manage_categories",
+      "assign_terms": "edit_posts"
+    },
+    "rewrite": {
+      "slug": "portfolio_cat",
+      "hierarchical": true
+    }
+  }
+}

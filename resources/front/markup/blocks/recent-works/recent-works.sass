@@ -1,0 +1,68 @@
+.works
+  // border-bottom: 1px solid transparentize($white, .7)
+  background: $black-4
+  // color: $white
+  color: $gray
+  &__container
+    padding-top: $padding
+    padding-bottom: $padding
+
+  &__title
+    margin-bottom: $margin-title
+    text-align: left
+    font-size: 30px
+    +mq($medium)
+      max-width: 60%
+      font-size: 40px
+
+  &__nav
+    margin-bottom: $margin
+
+  &__tabs-top
+    display: flex
+    align-items: center
+
+  &__text
+    // margin-left: auto
+    margin-bottom: $margin-title
+    // max-width: 26%
+    order: 1
+
+  &__w
+    // margin-right: -50px
+    margin-bottom: $margin-title
+    // margin-left: -50px
+    flex-wrap: wrap
+
+  &__list
+    flex-wrap: wrap
+    overflow: hidden
+
+
+    +mq($small)
+      margin-right: -15px
+      margin-left: -15px
+
+
+  &__work
+    // margin-bottom: $margin
+    padding-right: 0
+    padding-left: 0
+    max-width: 50%
+    width: 100%
+
+  &__item
+    margin-bottom: $margin
+    max-width: 100%
+    width: 100%
+    +mq($small)
+      padding-right: 15px
+      padding-left: 15px
+      max-width: 50%
+
+  &__button-w
+    text-align: center
+
+
+.works_full
+  border-bottom: none

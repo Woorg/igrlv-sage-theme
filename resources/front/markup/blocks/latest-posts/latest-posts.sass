@@ -1,0 +1,29 @@
+.latest-posts
+  border-bottom: 1px solid transparentize($white, .7)
+  background: $black
+  // color: $white
+  color: $gray
+  &__container
+    padding-top: $padding
+    padding-bottom: $padding
+
+  &__title
+    margin-bottom: $margin-title
+    text-align: left
+
+  &__item
+    border-bottom: 1px solid transparentize($white, .7)
+
+    &:last-child
+      border-bottom: none
+
+  &__link
+    padding-top: 30px
+    padding-bottom: 30px
+    display: block
+    color: inherit
+    text-decoration: none
+    +tr(all .3s linear)
+    &:hover
+      color: transparentize($white, .7)
+      +tr(all .3s linear)

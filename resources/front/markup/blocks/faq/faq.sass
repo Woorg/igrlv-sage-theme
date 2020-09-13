@@ -1,0 +1,76 @@
+.faq
+  // border-bottom: 1px solid transparentize($white, .7)
+  background: $black-3
+  // color: $white
+  color: $gray
+  &__container
+    padding-top: $padding
+    padding-bottom: $padding
+
+  &__title
+    margin-bottom: $margin-title
+    text-align: left
+
+  // &__list
+
+  &__item
+    position: relative
+    border-bottom: 1px solid transparentize($white, .7)
+    padding-top: 30px
+    padding-bottom: 30px
+    max-height: 90px
+    cursor: pointer
+    overflow: hidden
+    &::after,
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      right: 20px
+      width: 25px
+      height: 1px
+      background: $gray
+      transform: translate(0, 0)
+
+    &::after
+      transform: translate(0, 0) rotate(90deg)
+      +tr(.3s ease)
+
+    &::before
+      transform: translate(0, 0) rotate(0deg)
+      +tr(.3s ease)
+
+    &:last-child
+      border-bottom: none
+
+  &__item_active
+    padding-right: 40px
+    max-height: 100%
+    &::after
+      transform: translate(0, 0) rotate(0deg)
+      +tr(.3s ease)
+
+    &::before
+      transform: translate(0, 0) rotate(0deg)
+      +tr(.3s ease)
+
+    .faq__answer
+      // display: block
+      visibility: visible
+      transform: translate(0, 0)
+      +tr(all .1s ease)
+
+  &__quesiton
+    &:hover
+      color: transparentize($white, .7)
+      +tr(all .3s ease)
+
+  &__answer
+    padding-top: 30px
+    // display: none
+    visibility: hidden
+    transform: translate(0, 100%)
+    +tr(all .1s ease)
+
+    p
+      margin-bottom: 15px

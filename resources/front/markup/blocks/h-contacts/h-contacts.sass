@@ -1,0 +1,42 @@
+.h-contacts
+	// padding-left 36px
+	font-family $rM
+	// font-family $am
+	font-size 12px
+	// text-transform uppercase
+	// &__icon
+	// 	position absolute
+	// 	top 50%
+	// 	left 0
+	// 	margin-top -10px
+	// 	content '■'
+	// 	size(20px)
+	// 	fill #fff
+	// 	color #212121
+	&__email,
+	&__phone
+		position relative
+		padding-left 16px
+		display block
+		color #FFF
+		line-height 1.6
+		text-decoration none
+		text-transform lowercase
+		@extends .underline
+		// letter-spacing tracking(100)
+		span
+			padding-right 6px
+			text-transform lowercase
+		&:after
+			position absolute
+			top 50%
+			left 0
+			content '■'
+			width 0
+			height 0
+			color #fff
+			transform translateY(calc(-50% + -11px))
+
+.is-inverted
+	.h-contacts__icon
+		fill #000

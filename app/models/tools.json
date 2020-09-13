@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "type": "tax",
+  "name": "tools",
+  "links": [
+    "portfolio"
+  ],
+  "labels": {
+    "has_one": "Технология",
+    "has_many": "Технологии",
+    "text_domain": "igrlv",
+    "overrides": {
+      "name": "Технологии",
+      "singular_name": "Технология",
+      "search_items": "Search Технологию",
+      "popular_items": "Popular Технологии",
+      "all_items": "All Технологии",
+      "parent_item": "Parent Технология",
+      "parent_item_colon": "Parent Технология:",
+      "edit_item": "Edit Технологию",
+      "view_item": "View Технологию",
+      "update_item": "Update Технологию",
+      "add_new_item": "Update Технологию",
+      "new_item_name": "New Технология",
+      "separate_items_with_commas": "Separate Технологии with commass",
+      "add_or_remove_items": "Add or remove Технологию",
+      "choose_from_most_used": "Choose from the most used Технологий",
+      "not_found": "No Технологий found.",
+      "no_terms": "No Технологий",
+      "items_list_navigation": "Технологии list navigation",
+      "items_list": "Технологии list"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_nav_menus": true,
+    "show_in_rest": true,
+    "rest_base": "tools",
+    "rest_controller_class": "WP_REST_Terms_Controller",
+    "show_tagcloud": true,
+    "show_in_quick_edit": true,
+    "show_admin_column": false,
+    "capabilities": {
+      "manage_terms": "manage_categories",
+      "edit_terms": "manage_categories",
+      "delete_terms": "manage_categories",
+      "assign_terms": "edit_posts"
+    },
+    "rewrite": {
+      "slug": "tools",
+      "hierarchical": false
+    }
+  }
+}

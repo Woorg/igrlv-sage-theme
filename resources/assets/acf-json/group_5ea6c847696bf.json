@@ -1,0 +1,102 @@
+{
+    "key": "group_5ea6c847696bf",
+    "title": "Блок: FAQ",
+    "fields": [
+        {
+            "key": "field_5ed1341b59eae",
+            "label": "Заголовок",
+            "name": "name",
+            "type": "text",
+            "instructions": "Set name of the block",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ed1343559eaf",
+            "label": "Список",
+            "name": "list",
+            "type": "repeater",
+            "instructions": "Список вопросов и ответов",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Добавить вопрос",
+            "sub_fields": [
+                {
+                    "key": "field_5ed1344f59eb0",
+                    "label": "Вопрос",
+                    "name": "guestion",
+                    "type": "textarea",
+                    "instructions": "Частый вопрос",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_5ed1345359eb1",
+                    "label": "Ответ",
+                    "name": "answer",
+                    "type": "wysiwyg",
+                    "instructions": "Ответ на частый вопрос",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/faq"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1599605739
+}

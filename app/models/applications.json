@@ -1,0 +1,63 @@
+
+{
+  "active": true,
+  "type": "cpt",
+  "name": "applications",
+  "supports": [
+    "title",
+    "editor",
+    "thumbnail"
+  ],
+  "labels": {
+    "has_one": "Заявка",
+    "has_many": "Заявки",
+    "text_domain": "igrlv",
+    "overrides": {
+      "name": "Заявки",
+      "singular_name": "Заявка",
+      "menu_name": "Заявки",
+      "name_admin_bar": "Заявка",
+      "add_new": "Добавить Заявку",
+      "add_new_item": "Добавить Заявку",
+      "edit_item": "Редактировать Заявку",
+      "new_item": "Новая Заявка",
+      "view_item": "Смотреть Заявку",
+      "view_items": "Смотреть Заявку",
+      "search_items": "Искать Заявку",
+      "not_found": "Заявки не найдено.",
+      "not_found_in_trash": "Заявки не найдено в мусоре.",
+      "parent_item-colon": "Parent Заявка:",
+      "all_items": "Все Заявки",
+      "archives": "Архив Заявок",
+      "attributes": "Атрибуты Заявки",
+      "insert_into_item": "Вставить в Заявку",
+      "uploaded_to_this_item": "Загрузить в Заявку",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter Заявок list",
+      "items_list_navigation": "Заявок list navigation",
+      "items_list": "Список Заявок"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": false,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+    ],
+    "yarpp_support": true,
+    "rewrite": {
+      "slug": "applications",
+      "with_front": true
+    }
+  }
+}

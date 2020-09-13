@@ -1,0 +1,85 @@
+.price-tables
+	&__list
+		display flex
+		flex-flow row wrap
+		// justify-content center
+		justify-content space-between
+		align-items flex-start
+		+r($t)
+			justify-content center
+		+r($m)
+			justify-content flex-start
+		// flex-grow 1
+	&__item
+		position relative
+		border 1px solid rgba(0,0,0,0.1)
+		margin-bottom 50px
+		padding 15px
+		padding-bottom 30px
+		// width 48.5%
+		width 48%
+		flex 0 1 48%
+		text-align center
+		border-radius 5px
+		+r($t)
+			margin-bottom (50px/2)
+			width 100%
+			flex 1 1 100%
+	&__item-title
+		margin-bottom 30px
+		@extends .title-h4
+		// font-family $rL
+		font-family $al
+		font-size 22px
+		text-transform none
+	&__price
+		margin-bottom 30px
+		@extends .title-h3
+		// font-family $rL
+		font-family $am
+		font-size (33px/1.3)
+	&__price-val
+		font-size 26px
+		// font-family $rL
+		// text-transform uppercase
+	&__f-item
+		position relative
+		margin-bottom 30px
+		padding-left 30px
+		line-height 1.7
+		&:after
+			position absolute
+			top 50%
+			left 0
+			width 14px
+			height 10px
+			background url('../images/general/list.svg') 0 0 / cover no-repeat
+			content ''
+			transform translateY(-50%)
+	&__button
+		line-height 1.4
+		align-self flex-end
+	&__note-w
+		text-align center
+	&__note
+		position relative
+		padding 10px 20px
+		display inline-block
+		vertical-align top
+		// border-bottom 4px solid lighten(#b6deff, 10)
+		border-top 2px solid #B6DEFF
+		border-left 2px solid #B6DEFF
+		border-bottom 2px solid #B6DEFF
+		border-right 2px solid #B6DEFF
+		line-height 1.6
+		text-align left
+		border-radius 5px
+		// &:after
+		// 	position absolute
+		// 	top 0
+		// 	left 0
+		// 	bottom 0
+		// 	content ''
+		// 	width 4px
+		// 	background #009688
+		// 	border-radius 3px 0 0 3px

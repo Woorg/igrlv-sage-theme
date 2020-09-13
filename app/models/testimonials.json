@@ -1,0 +1,64 @@
+
+{
+  "active": true,
+  "type": "cpt",
+  "name": "testimonials",
+  "supports": [
+    "title",
+    "editor",
+    "thumbnail",
+    "comments"
+  ],
+  "labels": {
+    "has_one": "Отзыв",
+    "has_many": "Отзывы",
+    "text_domain": "igrlv",
+    "overrides": {
+      "name": "Отзывы",
+      "singular_name": "Отзыв",
+      "menu_name": "Отзывы",
+      "name_admin_bar": "Отзыв",
+      "add_new": "Add Отзыв",
+      "add_new_item": "Add Отзыв",
+      "edit_item": "Edit Отзыв",
+      "new_item": "New Отзыв",
+      "view_item": "View Отзыв",
+      "view_items": "View Отзывы",
+      "search_items": "Search Отзывы",
+      "not_found": "Отзыва не найдено.",
+      "not_found_in_trash": "Отзыва не найдено в мусоре.",
+      "parent_item-colon": "Parent Отзыв:",
+      "all_items": "All Отзывы",
+      "archives": "Архив Отзывов",
+      "attributes": "Атрибуты Отзыва",
+      "insert_into_item": "Insert into Отзыв",
+      "uploaded_to_this_item": "Uploaded to this Отзыв",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter Отзывов list",
+      "items_list_navigation": "Отзывов list navigation",
+      "items_list": "Список Отзывов"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+    ],
+    "yarpp_support": true,
+    "rewrite": {
+      "slug": "testimonials",
+      "with_front": true
+    }
+  }
+}

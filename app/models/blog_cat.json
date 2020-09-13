@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "type": "tax",
+  "name": "blog_cat",
+  "links": [
+    "blog"
+  ],
+  "labels": {
+    "has_one": "Рубрика",
+    "has_many": "Рубрики",
+    "text_domain": "igrlv",
+    "overrides": {
+      "name": "Рубрики",
+      "singular_name": "Рубрика",
+      "search_items": "Search Рубрики",
+      "popular_items": "Popular Рубрики",
+      "all_items": "All Рубрики",
+      "parent_item": "Parent Рубрика",
+      "parent_item_colon": "Parent Рубрика:",
+      "edit_item": "Edit Рубрику",
+      "view_item": "View Рубрику",
+      "update_item": "Update Рубрику",
+      "add_new_item": "Update Рубрику",
+      "new_item_name": "New Рубрика",
+      "separate_items_with_commas": "Separate Рубрики with commass",
+      "add_or_remove_items": "Add or remove Рубрику",
+      "choose_from_most_used": "Choose from the most used Рубрик",
+      "not_found": "No Рубрик found.",
+      "no_terms": "No Рубрик",
+      "items_list_navigation": "Рубрикк list navigation",
+      "items_list": "Рубрик list"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_nav_menus": true,
+    "show_in_rest": true,
+    "rest_base": "blog_cat",
+    "rest_controller_class": "WP_REST_Terms_Controller",
+    "show_tagcloud": true,
+    "show_in_quick_edit": true,
+    "show_admin_column": false,
+    "capabilities": {
+      "manage_terms": "manage_categories",
+      "edit_terms": "manage_categories",
+      "delete_terms": "manage_categories",
+      "assign_terms": "edit_posts"
+    },
+    "rewrite": {
+      "slug": "blog_cat",
+      "hierarchical": true
+    }
+  }
+}

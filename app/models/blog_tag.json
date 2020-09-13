@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "type": "tax",
+  "name": "blog_tag",
+  "links": [
+    "blog"
+  ],
+  "labels": {
+    "has_one": "Тэга",
+    "has_many": "Тэги",
+    "text_domain": "igrlv",
+    "overrides": {
+      "name": "Тэги",
+      "singular_name": "Тэг",
+      "search_items": "Search Тэги",
+      "popular_items": "Popular Тэги",
+      "all_items": "All Тэги",
+      "parent_item": "Parent Тэг",
+      "parent_item_colon": "Parent Тэг:",
+      "edit_item": "Edit Тэг",
+      "view_item": "View Тэг",
+      "update_item": "Update Тэг",
+      "add_new_item": "Update Тэг",
+      "new_item_name": "New Тэг",
+      "separate_items_with_commas": "Separate Тэги with commass",
+      "add_or_remove_items": "Add or remove Тэг",
+      "choose_from_most_used": "Choose from the most used Тэг",
+      "not_found": "No Тэгов found.",
+      "no_terms": "No Тэгов",
+      "items_list_navigation": "Тэгов list navigation",
+      "items_list": "Тэгов list"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_nav_menus": true,
+    "show_in_rest": true,
+    "rest_base": "blog_tag",
+    "rest_controller_class": "WP_REST_Terms_Controller",
+    "show_tagcloud": true,
+    "show_in_quick_edit": true,
+    "show_admin_column": false,
+    "capabilities": {
+      "manage_terms": "manage_categories",
+      "edit_terms": "manage_categories",
+      "delete_terms": "manage_categories",
+      "assign_terms": "edit_posts"
+    },
+    "rewrite": {
+      "slug": "blog_tag",
+      "hierarchical": true
+    }
+  }
+}

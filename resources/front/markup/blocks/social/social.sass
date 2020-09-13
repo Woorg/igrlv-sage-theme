@@ -1,0 +1,36 @@
+.social
+  display: flex
+  // color: $white
+  +mq($small)
+    flex-direction: column
+
+
+  &__item
+    +mq($small)
+      margin-top: 10px
+
+  &__link
+    position: relative
+    z-index: 1
+    width: 50px
+    height: 50px
+    display: flex
+    background: transparent
+    color: inherit
+    border-radius: 50%
+    +tr(background .3s ease-out)
+
+
+    &:hover
+      color: $accent-1
+      +tr(color .3s ease-out)
+
+
+  &__icon
+    position: absolute
+    z-index: 1
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+

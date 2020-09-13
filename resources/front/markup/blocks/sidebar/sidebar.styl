@@ -1,0 +1,30 @@
+.sidebar
+	position relative
+	margin-left ratio-percentage(30,1140)
+	float left
+	width ratio-percentage(280,1140)
+	background #FFF
+	+r($t)
+		width auto
+		float none
+	&__block
+		border 1px solid #E7E7E7
+		margin-bottom 30px
+		padding 20px
+		border-radius 6px
+	&__block_fixed
+		position fixed
+		z-index 1
+		top 100px
+		max-width 280px
+		// min-width 150px
+	&__title
+		margin-bottom 10px
+		font-family $am
+		font-size 17px
+		line-height 1.4
+		text-transform none
+		// letter-spacing tracking(150)
+	&__title_fade
+		margin-bottom 20px
+		color lighten(#212121, 70)

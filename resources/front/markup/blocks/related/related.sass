@@ -1,0 +1,70 @@
+.related
+  margin-top: $margin-title
+  .related__title
+    margin-bottom: $margin-title
+    padding: 0
+    font-weight: normal
+    font-size: 26px
+
+  &__list
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    +mq($small)
+      margin-right: -15px
+      margin-left: -15px
+
+
+  ul
+    li
+      margin-bottom: 30px
+      &:before
+        display: none
+    a
+      box-shadow: none
+      font-weight: normal
+      &:hover
+        color: transparentize($accent-6, .3)
+
+  &__item
+    margin-bottom: 10px
+    width: 100%
+    display: flex
+    flex-grow: 1
+    +mq($small)
+      margin-bottom: $margin
+      padding-right: 15px
+      padding-left: 15px
+      max-width: 33.3%
+
+    // +mq($medium)
+    //   max-width: 24.5%
+
+
+  &__link
+    position: relative
+    box-shadow: none
+    display: block
+
+  &__image
+    border: 1px solid transparentize($black, .6)
+    display: block
+    overflow: hidden
+    font-size: 0
+    overflow: hidden
+
+    img
+      border: none
+
+  &__item-w
+    padding-top: 20px
+    // padding-right: 10px
+    padding-bottom: 10px
+    // padding-left: 10px
+
+  &__item-title
+    display: block
+    font-size: 16px
+    overflow: hidden
+    color: $gray
+    line-height: 1.5

@@ -1,0 +1,106 @@
+html,
+body
+  height: 100%
+
+body
+  background: $black
+  color: $gray
+  font-size: 16px
+  font-display: swap
+  font-family: $a
+  font-weight: 400
+  line-height: 1.4
+  +tracking(20)
+  +mq($small)
+    font-size: 21px
+
+.container
+  margin: auto
+  padding-right: 15px
+  padding-left: 15px
+  width: 100%
+  max-width: 1200px
+  +mq($small)
+    padding-right: 50px
+    padding-left: 50px
+
+.container_full
+  max-width: 100%
+  +r($small)
+    padding-right: 0
+    padding-left: 0
+
+.container_borders
+  position: relative
+
+
+.code-toolbar
+  .toolbar-item
+    &:hover
+      color: transparentize($white, .1)
+
+
+img
+  max-width: 100%
+  height: auto
+
+// a
+//   &:focus
+//     outline: 1px dashed $accent-1
+
+
+#anycomment-root
+  .anycomment-form__guest-socials
+    display: none
+
+
+// +selection()
+//   background: $black
+//   color: $white
+
+
+  /* fade and slide transition active states (same for leave and enter) */
+.fade-leave-active,
+.fade-enter-active,
+.slide-leave-active,
+.slide-enter-active
+  transition: opacity 450ms ease, transform 650ms ease-in-out
+
+/* fade transition states */
+.fade-leave,
+.fade-enter-to
+  opacity: 1
+
+.fade-enter,
+.fade-leave-to
+  opacity: 0
+
+/* slide transition states */
+.slide-leave,
+.slide-enter-to
+  transform: translateX(0)
+
+.slide-enter,
+.slide-leave-to
+  transform: translateX(100%)
+
+.wp-block-code
+  padding: 10px
+  border-radius: 10px
+  +mq($small)
+    max-width: 80%
+
+.custom-form
+  margin-top: 100px
+
+
+.likes
+  margin-top: 30px
+  opacity: 1
+  &_liked
+    opacity: .8
+.inner-block
+  color: $white
+  &__title,
+  &__text
+    color: inherit

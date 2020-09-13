@@ -1,0 +1,61 @@
+.tabs
+  &__nav
+    margin-bottom: $margin-title
+    max-width: 100%
+    width: 100%
+
+  // &__nav-item
+
+  // &__nav-link
+
+  &__nav-icon
+    opacity: 0
+    +tr(all .3s ease)
+
+  // &__tab
+
+
+[role=tablist]
+  border: none
+  display: flex
+  overflow-x: overlay
+  +mq($small)
+    overflow-x: unset
+
+[role=tab]
+
+  border: 2px solid $accent-1
+  margin-bottom: 10px
+  padding-right: 5px
+  padding-left: 5px
+  background: transparent
+  color: $gray
+  white-space: nowrap
+  border-radius: 0
+  +tr(all .3s ease)
+
+  +mq($small)
+    margin-bottom: 0
+    padding-right: 20px
+    padding-left: 20px
+
+  &:hover
+    border: 2px solid $accent-1
+    background: $accent-1
+    +tr(all .3s ease)
+
+
+[role=tab][aria-selected=true]
+  border: 2px solid $accent-1
+  background: $accent-1
+  +tr(all .3s ease)
+
+  .tabs__nav-icon
+    opacity: 1
+    +tr(all .3s ease)
+
+[role=tab]:hover:not([aria-selected=true])
+  border: 2px solid $accent-1
+  background: $accent-1
+
+

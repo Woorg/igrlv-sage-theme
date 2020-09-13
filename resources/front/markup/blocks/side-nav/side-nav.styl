@@ -1,0 +1,28 @@
+.side-nav
+	display block
+	font-family $ar
+	font-size 16px
+	line-height 26px
+	text-align left
+	tr(all .3s ease)
+	&__item,
+	li
+		margin-bottom 15px
+		&:first-child
+			a
+				border-top 2px solid #212121
+				padding-top 20px
+	a
+		position relative
+		border-bottom 2px solid lighten(#01579b, 60)
+		padding-top 5px
+		padding-bottom 5px
+		display block
+		font-family $ar
+		font-size 16px
+		text-transform initial
+		color #01579b
+		// overflow hidden
+		@extends .transition
+		&:hover
+			border-bottom 2px solid transparent

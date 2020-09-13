@@ -1,0 +1,62 @@
+.header
+  // position: relative
+  position: fixed
+  z-index: 4
+  top: 0
+  left: 0
+  right: 0
+  border-bottom: 1px solid transparentize($white, .8)
+  // background: $black
+  background: $gray
+  // color: $white
+  color: $black
+  +tr(all .3s linear)
+  +mq($small)
+    right: auto
+    border-right: 1px solid transparentize($white, .8)
+    width: 96px
+    height: 100%
+    flex-direction: column
+
+  &__container
+    padding-top: 15px
+    padding-right: 15px
+    padding-bottom: 15px
+    padding-left: 15px
+    height: 76px
+    display: flex
+    justify-content: flex-start
+    flex-grow: 1
+    +mq($small)
+      padding-top: 30px
+      padding-bottom: 30px
+
+      padding-right: 15px
+      padding-left: 15px
+      height: auto
+      display: flex
+      flex-direction: column
+      align-items: center
+      flex-grow: 1
+
+  &__logo
+    // margin-right: auto
+    +mq($small)
+      margin-bottom: auto
+
+  &__nav
+    margin-right: auto
+    margin-left: auto
+    +mq($small)
+      margin-top: auto
+      margin-right: 0
+      margin-bottom: auto
+      margin-left: 0
+
+  &__social
+    position: relative
+
+    +mq($small)
+      margin-top: auto
+      margin-left: 0
+

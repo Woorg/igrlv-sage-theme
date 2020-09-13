@@ -1,0 +1,251 @@
+.nav
+  display: flex
+  flex-direction: column
+  color: currentColor
+  height: auto
+  &__button
+    @include resetbutton()
+    width: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    flex-grow: 1
+    +mq($small)
+      height: 60px
+
+    &:hover
+      .nav__icon
+        transform: scale(.8)
+        +tr(transform .3s linear)
+
+  &__text
+    +visuallyhidden()
+  &__icon
+    position: relative
+    top: 2px
+    width: 60px
+    height: 12px
+    display: block
+
+    &:before,
+    &:after
+      position: absolute
+      top: 0
+      left: 0
+      content: ""
+      width: 100%
+      height: 2px
+      background: currentColor
+      transform: scale(1)
+      +tr(transform .3s linear)
+
+    &:after
+      top: auto
+      bottom: 0
+
+  &__w
+    position: absolute
+    top: 76px
+    left: 0
+    bottom: 0
+    visibility: hidden
+    opacity: 0
+    transform: translateX(-100%)
+    +tr(opacity .3s linear)
+    +mq($small)
+      top: 0
+
+  &__list
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    flex-wrap: wrap
+
+    li
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+    a
+      display: block
+      font-weight: 400
+      color: inherit
+      text-decoration: none
+
+      box-shadow: inset 0 -1px 0 transparentize($white, .6)
+      +tr(box-shadow .1s linear)
+      &:hover
+        box-shadow: inset 0 -1px 0 transparent
+        +tr(box-shadow .1s linear)
+
+/*Modifier*/
+.nav_active
+  .nav__button
+    &:hover
+      +tr(transform .3s linear)
+  .nav__icon
+    +tr(transform .3s linear)
+    &:after,
+    &:before
+      top: 50%
+      background: $accent-1
+      +tr(transform .3s linear)
+    &:after
+      transform: translateY(-50%) rotate(45deg) scale(.8)
+      +tr(transform .3s linear)
+    &:before
+      transform: translateY(-50%) rotate(-45deg) scale(.8)
+      +tr(transform .3s linear)
+
+  .nav__w
+    border-top: 1px solid rgba(255, 255, 255, 0.5)
+    top: 76px
+    left: 0
+    width: 100vw
+    min-height: 100vh
+    display: flex
+    visibility: visible
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: $black
+    color: $white
+    transform: translateX(0%)
+    opacity: 1
+    +tr(opacity .3s linear)
+    +mq($small)
+      border-top: none
+      top: 0
+      left: 96px
+
+  .nav__list
+    padding-bottom: 200px
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: left
+    +mq($small)
+      padding-bottom: 60px
+
+  .nav__item,
+  li
+    border-bottom: 1px solid transparentize($white, .8)
+    margin-right: 0
+    width: 100vw
+    display: block
+    font-size: 38px
+    +mq($small)
+      font-size: 46px
+    +mq($medium)
+      font-size: 53px
+
+  .nav__link,
+  a
+    padding-top: 10px
+    padding-right: 30px
+    padding-bottom: 10px
+    padding-left: 30px
+    box-shadow: none
+    +tr(color .3s linear)
+
+    &:hover
+      color: transparentize($white, .2)
+      +tr(color .3s linear)
+
+
+// Third nav
+.nav_third
+  .nav__list
+    position: relative
+    flex-wrap: nowrap
+    white-space: nowrap
+    overflow: auto
+  li
+    border-bottom: none
+
+  //.menu-item-type-archive
+  //  padding-bottom: 0
+  //
+  //.menu-item-type-post_type_archive
+  //  padding-bottom: 0
+
+  .current-menu-item
+    padding-bottom: 70px
+    +mq($small)
+      padding-bottom: 80px
+
+  .current-portfolio_cat-parent
+    padding-bottom: 60px
+    +mq($small)
+      padding-bottom: 70px
+    +mq($medium)
+      padding-bottom: 80px
+    .current-menu-item
+      padding-bottom: 0
+  .menu-item-126
+    padding-bottom: 0
+
+  .current-menu-item,
+  .current-menu-ancestor
+    .sub-menu
+      margin-top: 25px
+      display: flex
+      +mq($small)
+        margin-top: 0
+
+  a
+    color: $gray
+    box-shadow: none
+    +tr(all .3s linear)
+    &:hover
+      +tr(all .3s linear)
+
+  .sub-menu
+    position: absolute
+    left: 0
+    bottom: 0
+    display: none
+    overflow: auto
+    //flex-wrap: wrap
+
+    .menu-item
+      margin-bottom: 0
+      margin-right: 15px
+      +mq($small)
+        margin-bottom: 15px
+      +mq($medium)
+        margin-right: 30px
+        margin-bottom: 0
+    .current-menu-item
+      a
+        border: 2px solid $accent-1
+        background: $accent-1
+        +tr(all .3s ease)
+    a
+      border: 2px solid $accent-1
+      margin-bottom: 10px
+      padding-top: 5px
+      padding-right: 10px
+      padding-bottom: 10px
+      padding-left: 10px
+      background: transparent
+      color: $gray
+      white-space: nowrap
+      border-radius: 0
+      +tr(all .3s ease)
+      +mq($small)
+        margin-bottom: 0
+        padding-right: 20px
+        padding-left: 20px
+
+      &:hover
+        border: 2px solid $accent-1
+        background: $accent-1
+        +tr(all .3s ease)
+
+
+
+
+

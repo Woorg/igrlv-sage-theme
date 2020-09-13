@@ -1,0 +1,53 @@
+.side
+  position: relative
+  color: $gray
+  +r($small)
+    display: none
+  &__block
+    margin-bottom: $margin
+    padding-bottom: $padding
+
+  &__block-title
+    margin-bottom: $margin-title
+    color: $gray-2
+    font-size: 23px
+    +mq($small)
+      font-size: 30px
+  &__block-list
+    li
+      margin-bottom: $margin
+    a
+      color: inherit
+      // color: $accent-4
+      text-decoration: none
+  &__nav-list
+    font-size: 0
+  &__nav-item
+    margin-right: 4px
+    margin-bottom: $margin
+    display: block
+    vertical-align: top
+  &__nav-link
+    padding-top: 5px
+    padding-bottom: 5px
+    width: 100%
+    display: block
+    color: $gray
+    font-size: 19px
+    text-align: left
+    text-decoration: none
+    +tr(color .3s ease)
+    &:hover
+      color: darken($gray, 10)
+      +tr(color .3s ease)
+
+  &__popular-item
+    margin-bottom: 20px
+  &__popular-link
+    display: block
+    // color: $accent-2
+    text-decoration: none
+  &__popular-image
+    margin-bottom: 15px
+  &__popular-text
+    margin-bottom: 15px

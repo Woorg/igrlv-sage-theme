@@ -1,0 +1,99 @@
+.portfolio-single
+	position relative
+	display block
+
+	&__title,
+	&__text-title
+		margin-bottom 30px
+		@extends .title-h2
+	&__text-title
+		margin-bottom 0
+		hide-text()
+	&__text
+		max-width 60%
+		@extends .wysiwyg
+		+r($t)
+			max-width 100%
+		p
+			+r($m)
+				font-size 17px
+	&__list
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+	&__item
+		margin-bottom 20px
+		// display inline-block
+		// vertical-align top
+		max-width 31%
+		flex 1 1 33%
+		font-size 0
+		+r($t)
+			max-width 31%
+			flex 1 1 31%
+		+r($m)
+			max-width 100%
+			flex 1 1 100%
+
+	&__item_links
+		max-height 300px
+		overflow auto
+	&__term,
+	&__desc,
+	&__text-title
+		// font-family $rR
+		font-family $am
+		font-size 17px
+		line-height 1.7
+		// text-transform uppercase
+		text-transform none
+		a
+			border-bottom 1px solid lighten(#01579b, 60)
+			color #01579b
+			&:hover
+				border-bottom 1px solid transparent
+			// text-transform lowercase
+	&__term
+		margin-right 30px
+		margin-bottom 10px
+		+r($t)
+			margin-right 0
+	&__desc
+		margin-right 30px
+		margin-bottom 5px
+		display inline-block
+		vertical-align top
+		text-transform lowercase
+		text-align left
+		// font-family $rL
+		font-family $ar
+		+r($m)
+			margin-right 0
+			display block
+
+	&__details
+		// position absolute
+		position static
+		bottom 50px
+		right 0
+		left 0
+		padding 30px
+		background #fff
+		border-radius 3px 3px 0 0
+		+r($tL)
+			position relative
+			bottom 0
+			padding 10px
+
+.single-portfolio
+	.main
+		margin-bottom 0
+	.article__title
+		color #fff
+		text-shadow 0 1px 1px #212121
+
+	.navigation-top
+		.post-navigation
+			a
+				color #fff
+				text-shadow 0 1px 1px #212121

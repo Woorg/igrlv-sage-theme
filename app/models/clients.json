@@ -1,0 +1,63 @@
+
+{
+  "active": true,
+  "type": "cpt",
+  "name": "clients",
+  "supports": [
+    "title",
+    "editor",
+    "thumbnail"
+  ],
+  "labels": {
+    "has_one": "Клиент",
+    "has_many": "Клиенты",
+    "text_domain": "igrlv",
+    "overrides": {
+      "name": "Клиенты",
+      "singular_name": "Клиент",
+      "menu_name": "Клиенты",
+      "name_admin_bar": "Клиент",
+      "add_new": "Add Клиента",
+      "add_new_item": "Add Клиента",
+      "edit_item": "Edit Клиента",
+      "new_item": "New Клиент",
+      "view_item": "View Клиента",
+      "view_items": "View Клиента",
+      "search_items": "Search Клиента",
+      "not_found": "Клиента не найдено.",
+      "not_found_in_trash": "Клиента не найдено в мусоре.",
+      "parent_item-colon": "Parent Клиент:",
+      "all_items": "All Клиенты",
+      "archives": "Архив Клиентов",
+      "attributes": "Атрибуты Клиента",
+      "insert_into_item": "Insert into Клиента",
+      "uploaded_to_this_item": "Uploaded to this Клиента",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter Клиентов list",
+      "items_list_navigation": "Клиентов list navigation",
+      "items_list": "Список Клиентов"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": false,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+    ],
+    "yarpp_support": true,
+    "rewrite": {
+      "slug": "clients",
+      "with_front": true
+    }
+  }
+}

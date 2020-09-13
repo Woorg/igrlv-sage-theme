@@ -1,0 +1,64 @@
+{
+  "active": true,
+  "type": "cpt",
+  "name": "portfolio",
+  "supports": [
+    "title",
+    "editor",
+    "thumbnail"
+  ],
+  "labels": {
+    "has_one": "Работа",
+    "has_many": "Портфолио",
+    "text_domain": "igrlv",
+    "overrides": {
+      "name": "Портфолио",
+      "singular_name": "Работа",
+      "menu_name": "Портфолио",
+      "name_admin_bar": "Работа",
+      "add_new": "Add Работу",
+      "add_new_item": "Add Работу",
+      "edit_item": "Edit Работу",
+      "new_item": "New Работа",
+      "view_item": "View Работу",
+      "view_items": "View Работы",
+      "search_items": "Search Работу",
+      "not_found": "Работы не найдено.",
+      "not_found_in_trash": "Работы не найдено в мусоре.",
+      "parent_item-colon": "Parent Работы:",
+      "all_items": "All Работы",
+      "archives": "Архив работ",
+      "attributes": "Атрибуты Работы",
+      "insert_into_item": "Insert into Работу",
+      "uploaded_to_this_item": "Uploaded to this Работу",
+      "featured_image": "Featured Image",
+      "set_featured_image": "Set featured image",
+      "remove_featured_image": "Remove featured image",
+      "use_featured_image": "Use featured image",
+      "filter_items_list": "Filter Работ list",
+      "items_list_navigation": "Работы list navigation",
+      "items_list": "Список Работ"
+    }
+  },
+  "config": {
+    "public": true,
+    "publicly_queryable": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "query_var": true,
+    "has_archive": true,
+    "hierarchical": true,
+    "menu_position": null,
+    "can_export": true,
+    "capability_type": "post",
+    "taxonomies": [
+      "kind",
+      "tools",
+      "type_of_site"
+    ],
+    "rewrite": {
+      "slug": "portfolio",
+      "with_front": true
+    }
+  }
+}

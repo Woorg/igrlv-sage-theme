@@ -1,0 +1,100 @@
+.pagination
+  position: relative
+  margin-bottom: $margin
+  padding-top: 30px
+  padding-right: 10px
+  padding-bottom: 30px
+  padding-left: 10px
+  // text-align: center
+  // +mq($small)
+  //   text-align: center
+
+  a,
+  span
+    margin-right: 30px
+    // color: $accent-1
+    // color: currentColor
+    color: $gray
+    font-weight: 500
+    text-decoration: none
+    &:last-child
+      margin-right: 0
+
+
+  a
+
+    +tr(all .3s ease-out)
+    &:hover
+      color: darken($gray, 10)
+      +tr(all .3s ease-out)
+      // span
+      //   color: $accent-1
+
+  .prev,
+  .next
+    // position: absolute
+    // bottom: -20px
+    +mq($small)
+      position: static
+
+  // .prev
+  //   left: 0
+  // .next
+  //   right: 0
+
+.pagination_page
+  margin-top: $margin-title
+  margin-bottom: $margin-title
+  padding-top: $padding
+  // color: $accent-1
+  .screen-reader-text
+    margin-bottom: $margin
+    color: $black
+    box-shadow: none
+    display: none
+
+    // +visuallyhidden()
+
+  .nav-links
+    display: flex
+    align-items: flex-start
+    text-align: left
+    text-align: start
+    font-weight: 400
+    box-shadow: none
+
+
+  .nav-previous,
+  .nav-next
+    max-width: 50%
+    width: 100%
+    box-shadow: none
+    a
+      +tr(color .3s linear)
+      &:hover
+        .post-title
+          color: darken($gray, 20)
+          +tr(color .3s linear)
+
+    .screen-reader-text
+      margin: 0
+      display: block
+      +visuallyhidden()
+
+    .post-title
+
+      box-shadow: none
+
+
+
+  .nav-previous
+    margin-right: auto
+
+  .nav-next
+    margin-left: auto
+    text-align: right
+    text-align: end
+
+  .meta-nav
+    +visuallyhidden()
+

@@ -1,0 +1,631 @@
+.link
+  color: inherit
+  +tr(box-shadow .1s ease-out)
+  &:hover
+    +tr(box-shadow .1s ease-out)
+
+
+.text-top
+  // color: darken($white, 60)
+  color: $white
+  font-style: italic
+  font-weight: 400
+  text-transform: uppercase
+  font-size: 12px
+  @include tracking(100)
+
+  a
+    padding-bottom: 1px
+    display: inline-block
+    color: inherit
+    text-decoration: none
+    +tr(box-shadow .1s ease-out)
+    &:hover
+      +tr(box-shadow .1s ease-out)
+
+  +mq($small)
+    font-size: 14px
+
+.title
+  position: relative
+  font-family: $a
+  font-size: 35px
+  font-weight: 400
+  line-height: 1.3
+  // @include tracking(20)
+  text-transform: none
+  +mq($small)
+    font-size: 56px
+
+.title_big
+  font-size: 33px
+  +mq($small)
+    font-size: 40px
+
+.title_regular
+  font-size: 27px
+  line-height: 1.4
+  +r($small)
+    font-size: 22px
+  +mq($small)
+    font-size: 33px
+
+.title_small
+  font-size: 21px
+  +mq($medium)
+    font-size: 27px
+
+
+.animated-title
+  &__line
+    display: block
+    padding-bottom: 0.1em
+    white-space: nowrap
+    overflow: hidden
+    span
+      position: relative
+      display: inline-block
+
+.text
+  position: relative
+  margin-bottom: 15px
+  font-family: $a
+  font-size: 16px
+  font-weight: 400
+  line-height: 1.6
+
+  +mq($small)
+    font-size: 19px
+
+  h1,
+  h2
+    margin-bottom: 25px
+    font-family: $a
+    font-size: 25px
+    font-weight: 400
+    line-height: 1.3
+    text-transform: none
+
+    +mq($small)
+      font-size: 46px
+    +mq($medium)
+      font-size: 56px
+
+  p
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+
+.button
+  @include resetbutton()
+  padding-top: 20px
+  padding-right: 30px
+  padding-left: 30px
+  padding-bottom: 18px
+
+  display: flex
+  justify-content: center
+
+  // background: $accent-1
+  background: $gt-2
+  // background: $gray
+  // color: $white
+  color: $gray
+  font-size: 14px
+  font-weight: 500
+  line-height: 1
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  +tracking(50)
+  // border-radius: 25px
+  +tr(all .3s ease-out)
+
+  +mq($small)
+    display: inline-block
+    vertical-align: top
+    font-size: 18px
+
+  &:hover
+    background: linear-gradient(to right, darken(#396afc, 10), darken(#2948ff, 10))
+    +tr(all .3s ease)
+
+.button_general
+  border: 2px solid $accent-1
+  background: $gt-2
+  background: transparent
+  // color: $black
+  &:hover
+    background: linear-gradient(to right, darken(#396afc, 10), darken(#2948ff, 10))
+    background: $accent-1
+    // color: $black
+    +tr(all .3s ease)
+
+.button_small
+  padding-top: 12px
+  padding-right: 15px
+  padding-left: 15px
+  padding-bottom: 11px
+  background: transparentize($bg, .2)
+  font-size: 13px
+  color: $white
+  +tracking(100)
+  text-transform: uppercase
+
+.shortlink
+  @extend .button
+  box-shadow: none
+
+.flex
+  display: flex
+
+.flex_start
+  justify-content: flex-start
+
+.flex_center
+  justify-content: center
+
+.flex_end
+  justify-content: flex-end
+
+.flex_top
+  align-items: flex-start
+
+.flex_stretch
+  align-items: stretch
+
+.flex_vertical
+  align-items: center
+
+.flex_wrap
+  flex-wrap: wrap
+
+.slider
+
+  .slick-arrow
+    top: auto
+    bottom: 0
+    z-index: 1
+    color: $white
+    width: 100px
+    height: auto
+    transform: none
+    &:before
+      background: transparent
+      font-family: $a
+      color: transparentize($white, .5)
+      font-size: 55px
+      font-weight: 400
+      font-style: italic
+      line-height: 1.454
+      +tr(all .3s ease)
+
+      +mq($small)
+        font-size: 76px
+
+  .slick-prev
+    left: 0
+    &:before
+      content: "←"
+
+  .slick-next
+    right: 0
+    &:before
+      content: "→"
+
+.wysiwyg
+  // color: transparentize($white, .1)
+  p
+    margin-bottom: $margin
+    // color: transparentize($black, .1)
+    font-family: $a
+    font-size: 16px
+    font-weight: 400
+    line-height: 1.6
+    +mq($small)
+      font-size: 19px
+    &:last-child
+      margin-bottom: 0
+  h2
+    margin-top: $margin
+    margin-bottom: $margin
+    font-size: 27px
+    +mq($small)
+      font-size: 33px
+
+  h3
+    margin-top: 30px
+    margin-bottom: 15px
+    font-size: 18px
+    +mq($small)
+      font-size: 22px
+
+  a
+    color: inherit
+    text-decoration: none
+    // box-shadow: inset 0 -1px 0 transparentize($white, .2)
+    +tr(all .3s ease-out)
+    &:hover
+      text-decoration: none
+      // box-shadow: none
+      +tr(all .3s ease-out)
+
+    &.button
+      border: 2px solid $accent-1
+      // background: $gt-2
+      background: transparent
+      // color: $black
+      box-shadow: none
+      &:hover
+        // background: linear-gradient(to right, darken(#396afc, 10), darken(#2948ff, 10))
+        background: $accent-1
+        // color: $black
+        +tr(all .3s ease)
+
+  ul,
+  ol
+    margin-bottom: $margin
+    li
+      margin-bottom: 15px
+      &:before
+        content: "— "
+    a
+      color: $gray
+      text-decoration: none
+      +tr(box-shadow .1s ease-out)
+      &:hover
+        +tr(box-shadow .1s ease-out)
+
+  // ol
+  //   list-style-type: decimal
+  //   list-style-position: inside
+  //   li
+  //     &:before
+  //       display: none
+
+  strong
+    font-style: italic
+    font-weight: 700
+
+pre
+  margin-bottom: 30px
+  font-family: $j
+
+code
+  padding-top: 2px
+  padding-right: 5px
+  padding-bottom: 5px
+  padding-left: 5px
+  background: transparentize($black, .95)
+  font-family: $j
+  font-size: 14px
+  font-weight: normal
+  border-radius: 8px
+
+// Animations
+
+.bounce
+  animation-name: bounce
+  animation-duration: .6s
+
+.flash
+  animation-name: flash
+  animation-duration: .6s
+
+.jello
+  animation-name: jello
+  animation-duration: .6s
+
+.rubberBand
+  animation-name: rubberBand
+  animation-duration: .6s
+
+.shake
+  animation-name: shake
+  animation-duration: .6s
+
+.swing
+  animation-name: swing
+  animation-duration: .6s
+
+.wobble
+  animation-name: wobble
+  animation-duration: .6s
+
+.heartBeat
+  animation-name: jello
+  animation-duration: .6s
+
+
+
+.bounceIn
+  animation-name: bounceIn
+  animation-duration: .6s
+
+.bounceInDown
+  animation-name: bounceInDown
+  animation-duration: .6s
+
+.bounceInLeft
+  animation-name: bounceInLeft
+  animation-duration: .6s
+
+.bounceInRight
+  animation-name: bounceInRight
+  animation-duration: .6s
+
+.bounceInUp
+  animation-name: bounceInUp
+  animation-duration: .6s
+
+
+
+
+.bounceOut
+  animation-name: bounceOut
+  animation-duration: .6s
+
+.bounceOutDown
+  animation-name: bounceOutDown
+  animation-duration: .6s
+
+.bounceOutLeft
+  animation-name: bounceOutLeft
+  animation-duration: .6s
+
+.bounceOutRight
+  animation-name: bounceOutRight
+  animation-duration: .6s
+
+.bounceOutUp
+  animation-name: bounceOutUp
+  animation-duration: .6s
+
+
+.fadeIn
+  animation-name: fadeIn
+  animation-duration: .6s
+
+.fadeInDown
+  animation-name: fadeInDown
+  animation-duration: .6s
+
+.fadeInDownBig
+  animation-name: fadeInDownBig
+  animation-duration: .6s
+
+.fadeInLeft
+  animation-name: fadeInLeft
+  animation-duration: .6s
+
+.fadeInLeftBig
+  animation-name: fadeInLeftBig
+  animation-duration: .6s
+
+.fadeInRight
+  animation-name: fadeInRight
+  animation-duration: .6s
+
+.fadeInRightBig
+  animation-name: fadeInRightBig
+  animation-duration: .6s
+
+
+.fadeInUp
+  animation-name: fadeInUp
+  animation-duration: .6s
+
+
+.fadeInUpBig
+  animation-name: fadeInUpBig
+  animation-duration: .6s
+
+
+
+.fadeOut
+  animation-name: fadeOut
+  animation-duration: .6s
+
+
+.fadeOutDown
+  animation-name: fadeOutDown
+  animation-duration: .6s
+
+
+.fadeOutDownBig
+  animation-name: fadeOutDownBig
+  animation-duration: .6s
+
+
+.fadeOutLeft
+  animation-name: fadeOutLeft
+  animation-duration: .6s
+
+
+.fadeOutLeftBig
+  animation-name: fadeOutLeftBig
+  animation-duration: .6s
+
+
+.fadeOutRight
+  animation-name: fadeOutRight
+  animation-duration: .6s
+
+
+.fadeOutRightBig
+  animation-name: fadeOutRightBig
+  animation-duration: .6s
+
+
+.fadeOutUp
+  animation-name: fadeOutUp
+  animation-duration: .6s
+
+
+.fadeOutUpBig
+  animation-name: fadeOutUpBig
+  animation-duration: .6s
+
+.flip
+  animation-name: flip
+  animation-duration: .6s
+
+.flipInX
+  animation-name: flipInX
+  animation-duration: .6s
+
+.flipInY
+  animation-name: flipInY
+  animation-duration: .6s
+
+.flipOutX
+  animation-name: flipOutX
+  animation-duration: .6s
+
+.flipOutY
+  animation-name: flipOutY
+  animation-duration: .6s
+
+
+.lightSpeedIn
+  animation-name: lightSpeedIn
+  animation-duration: .6s
+
+.fadeOut
+  animation-name: fadeOut
+  animation-duration: .6s
+
+.lightSpeedOut
+  animation-name: lightSpeedOut
+  animation-duration: .6s
+
+.rotateIn
+  animation-name: rotateIn
+  animation-duration: .6s
+
+.rotateInDownLeft
+  animation-name: rotateInDownLeft
+  animation-duration: .6s
+
+.rotateInDownRight
+  animation-name: rotateInDownRight
+  animation-duration: .6s
+
+.rotateInUpLeft
+  animation-name: rotateInUpRight
+  animation-duration: .6s
+
+
+.rotateOut
+  animation-name: rotateOut
+  animation-duration: .6s
+
+.rotateOutDownLeft
+  animation-name: rotateOutDownLeft
+  animation-duration: .6s
+
+.rotateOutDownRight
+  animation-name: rotateOutDownRight
+  animation-duration: .6s
+
+.rotateOutUpLeft
+  animation-name: rotateOutUpLeft
+  animation-duration: .6s
+
+.rotateOutUpRight
+  animation-name: rotateOutUpRight
+  animation-duration: .6s
+
+
+
+.slideInUp
+  animation-name: slideInUp
+  animation-duration: .6s
+
+.slideInDown
+  animation-name: slideInDown
+  animation-duration: .6s
+
+.slideInLeft
+  animation-name: slideInLeft
+  animation-duration: .6s
+
+.slideInRight
+  animation-name: slideInRight
+  animation-duration: .6s
+
+
+
+.slideOutUp
+  animation-name: slideOutUp
+  animation-duration: .6s
+
+.slideOutDown
+  animation-name: slideOutDown
+  animation-duration: .6s
+
+.slideOutLeft
+  animation-name: slideOutLeft
+  animation-duration: .6s
+
+.slideOutRight
+  animation-name: slideOutRight
+  animation-duration: .6s
+
+
+
+.zoomIn
+  animation-name: zoomIn
+  animation-duration: .6s
+
+.zoomInDown
+  animation-name: zoomInDown
+  animation-duration: .6s
+
+.zoomInLeft
+  animation-name: zoomInLeft
+  animation-duration: .6s
+
+.zoomInUp
+  animation-name: zoomInUp
+  animation-duration: .6s
+
+
+
+.zoomOut
+  animation-name: zoomOut
+  animation-duration: .6s
+
+.zoomOutDown
+  animation-name: zoomOutDown
+  animation-duration: .6s
+
+.zoomOutLeft
+  animation-name: zoomOutLeft
+  animation-duration: .6s
+
+.zoomOutRight
+  animation-name: zoomOutRight
+  animation-duration: .6s
+
+.zoomOutUp
+  animation-name: zoomOutUp
+  animation-duration: .6s
+
+
+
+.hinge
+  animation-name: hinge
+  animation-duration: .6s
+
+.jackInTheBox
+  animation-name: jackInTheBox
+  animation-duration: .6s
+
+.rollIn
+  animation-name: rollIn
+  // animation-duration: .6s
+
+.rollOut
+  animation-name: rollOut
+  // animation-duration: .6s

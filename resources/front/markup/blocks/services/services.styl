@@ -1,0 +1,79 @@
+.services
+	&__in
+		@extends .in
+		padding-top $section-padding-vert
+		padding-bottom 20px
+		text-align center
+		+r($t)
+			padding-top ($section-padding-vert / 1.2)
+			padding-bottom ($section-padding-vert / 1.2)
+		+r($m)
+			padding-top 50px
+			padding-bottom 25px
+	&__title
+		margin-bottom (86px/2)
+		@extends .title-h2
+		color #141414
+		text-align center
+		+r($t)
+			margin-bottom (90px / 2)
+	&__list
+		font-size 0
+		@extends .transition
+		+r($t)
+			padding-left 0
+			padding-right 0
+	&__item
+		position relative
+		margin-right 150px
+		margin-right ratio-percentage(150,1140)
+		margin-bottom 80px
+		padding-left 76px
+		@extends .ib
+		width 440px
+		width ratio-percentage(440,1140)
+		text-align left
+		&:nth-child(2n)
+			margin-right 0
+		&.services__item_2
+			padding-left 72px
+		+r($t)
+			margin-right 0
+			display block
+			width auto
+			&:last-child
+				margin-bottom 0
+		+r($m)
+			margin-bottom 40px
+	&__item-title
+		margin-bottom 23px
+		font-family $rR
+		// font-family $ar
+		font-size 29px
+		line-height 1.4
+		+r($m)
+			font-size 23px
+	&__item-text
+		font-family $rL
+		// font-family $ar
+		font-size 19px
+		line-height 1.7
+		// letter-spacing tracking(50)
+		+r($m)
+			font-size 14px
+	&__item-icon
+		position absolute
+		top 17px
+		left 0
+		// transform translateY(-50%)
+	&__item-icon_1
+		width 60px
+		// height 100px
+		// width 30px
+		// height 50px
+	&__item-icon_2
+		width 60px
+		// height 48px
+	&__item-icon_3
+		width 48px
+		height 48px

@@ -1,0 +1,60 @@
+.table-of-contents
+  padding-top: 30px
+  padding-right: 30px
+  padding-bottom: 30px
+  padding-left: 30px
+  +tr(all .3s ease-out)
+  &__top
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    cursor: pointer
+  // &__title
+
+  &__list
+    margin-top: 30px
+    margin-left: 30px
+    height: auto
+    max-height: 10000px
+    opacity: 1
+    list-style-type: none
+    list-style-position: inside
+    +tr(all .3s ease-out)
+  &__item
+    margin-bottom: 5px
+
+  &__link,
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: none
+      box-shadow: none
+
+  &__collapse
+    +resetbutton()
+    position: relative
+    margin-left: 10px
+    width: 20px
+    height: 20px
+    transform: rotate(0deg)
+    +tr(all .3s ease-out)
+
+  &__collapse-icon
+    background-size: cover
+    color: $white
+
+// modifier
+.table-of-contents_closed
+  +tr(all .3s ease-out)
+  .table-of-contents__collapse
+    transform: rotate(180deg)
+    +tr(all .3s ease-out)
+
+  .table-of-contents__list
+    // height: 0
+    margin-top: 0
+    margin-bottom: 0
+    max-height: 0
+    opacity: 0
+    +tr(all .3s ease-out)
